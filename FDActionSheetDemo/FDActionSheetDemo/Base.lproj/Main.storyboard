@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T71-kJ-esr">
+                                <rect key="frame" x="214" y="334" width="174" height="30"/>
+                                <state key="normal" title="可改变样式的ActionSheet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showStyleActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gkG-x2-xbu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fie-aR-65y">
+                                <rect key="frame" x="229" y="244" width="144" height="30"/>
+                                <state key="normal" title="带标题的ActionSheet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showTitleActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xOd-vj-ipd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll8-P5-MJz">
+                                <rect key="frame" x="236" y="170" width="129" height="30"/>
+                                <state key="normal" title="普通的ActionSheet">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNormalActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lq8-wB-MLn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ll8-P5-MJz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="N4y-hG-UhE"/>
+                            <constraint firstItem="Fie-aR-65y" firstAttribute="top" secondItem="ll8-P5-MJz" secondAttribute="bottom" constant="44" id="aFy-kQ-h40"/>
+                            <constraint firstItem="Fie-aR-65y" firstAttribute="centerX" secondItem="T71-kJ-esr" secondAttribute="centerX" id="rut-JD-Php"/>
+                            <constraint firstItem="T71-kJ-esr" firstAttribute="top" secondItem="Fie-aR-65y" secondAttribute="bottom" constant="60" id="vjn-6F-goy"/>
+                            <constraint firstAttribute="centerX" secondItem="ll8-P5-MJz" secondAttribute="centerX" id="wGe-y5-0YW"/>
+                            <constraint firstItem="Fie-aR-65y" firstAttribute="centerX" secondItem="ll8-P5-MJz" secondAttribute="centerX" id="xqv-KR-Lvb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
