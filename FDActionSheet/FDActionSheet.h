@@ -39,6 +39,7 @@
 
 @optional
 
+- (void)actionSheetRemovedFromSuperView:(FDActionSheet *)actionSheet;
 - (void)actionSheetCancel:(FDActionSheet *)actionSheet;
 - (void)actionSheet:(FDActionSheet *)sheet clickedButtonIndex:(NSInteger)buttonIndex;
 
