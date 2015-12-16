@@ -211,6 +211,9 @@ CGFloat contentViewHeight;
         _backgroundView.alpha = 0;
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
+        if (_delegate && [_delegate respondsToSelector:@selector(actionSheetRemovedFromSuperView:)]) {
+            [_delegate actionSheetRemovedFromSuperView:self];
+        }
     }];
 }
 
